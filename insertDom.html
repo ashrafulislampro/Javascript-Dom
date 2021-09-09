@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>InsertDom</title>
+          <style>
+                    article {
+                              border: 3px solid tomato;
+                              border-radius: 5px;
+                              margin: 5px;
+                              padding: 5px;
+                    }
+          </style>
+</head>
+
+<body>
+          <main>
+                    <section>
+                              <article id="first-Items">
+                                        <h2>author-1</h2>
+                                        <p class="lekhor">Lekhok-1</p>
+                                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                  Reprehenderit ullam aperiam ex, dolor assumenda illum similique
+                                                  asperiores et est enim.</p>
+                              </article>
+                              <article>
+                                        <h2>author-2</h2>
+                                        <p class="lekhor">Lekhok-2</p>
+                                        <p class="description">Voluptas voluptates harum voluptatem officiis dolore! Vel
+                                                  distinctio quos earum. Nesciunt quaerat adipisci eveniet ipsam. Facere
+                                                  saepe iste hic velit.</p>
+                              </article>
+                              <article>
+                                        <h2>author-3</h2>
+                                        <p class="lekhor">Lekhok-3</p>
+                                        <p class="description">Ut voluptatem minima molestias, excepturi ab nemo enim
+                                                  facere, quo ad rem aliquid, itaque nostrum dolores sequi eius culpa
+                                                  optio.</p>
+                              </article>
+                              <article>
+                                        <h2>Grocery List</h2>
+                                        <ul id="grocery-list">
+                                                  <li>gift items-1</li>
+                                                  <li>gift items-2</li>
+                                                  <li>gift items-3</li>
+                                                  <li>gift items-4</li>
+                                                  <li>gift items-5</li>
+                                        </ul>
+                              </article>
+                    </section>
+          </main>
+          <script>
+                    var article = document.getElementById('first-Items');
+                    var nextElement = document.createElement('h4');
+                    nextElement.innerHTML = 'Batti jalia Nibia deh bondhore';
+                    article.appendChild(nextElement);
+
+                    // new article opened
+                    var parent = document.getElementById('grocery-list');
+                    var nextGrocery = document.createElement('li');
+                    nextGrocery.innerHTML = 'Brand New Gift';
+                    parent.appendChild(nextGrocery);
+
+
+          </script>
+</body>
+
+</html>

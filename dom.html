@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+          <style>
+                    article{
+                              border: 3px solid tomato;
+                              border-radius: 5px;
+                              margin: 5px;
+                              padding: 5px;
+                    }
+                   
+          </style>
+</head>
+<body>
+          <main>
+                  <article>
+                            <h1>article-1</h1>
+                            <p  id="bestSeller" class="author">author-1</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis magnam amet inventore dolorum, quod minus ipsum placeat veritatis eaque, aliquid cupiditate consequuntur modi quas nesciunt eum temporibus ducimus exercitationem tempora.</p>
+                  </article>
+                  <article class="special">
+                            <h1>article-2</h1>
+                            <p class="author">author-2</p>
+                            <p>Repellat, aperiam neque perferendis soluta sed cumque fugit, inventore, quo tempore accusantium eligendi deserunt nam laudantium. Facilis unde sapiente reprehenderit magni rerum nihil eveniet dolores saepe, commodi veritatis, omnis a?</p>
+                  </article>
+                  <article class="special">
+                            <h1 class="header">article-3</h1>
+                            <p title="This is the important sector" class="author">author-3</p>
+                            <p>Porro provident similique et nobis laboriosam adipisci eaque nam facilis, omnis quo deleniti nisi, quisquam sed dignissimos delectus repellat non, rerum ad aspernatur odit? Veniam cumque dignissimos doloremque nemo iste.</p>
+                  </article>
+          </main>
+          <script>
+                    document.body.style.backgroundColor='cyan';
+                    var authors = document.querySelectorAll(".special h1");
+                    for (let i = 0; i < authors.length; i++) {
+                              const element = authors[i];
+                        //       console.log(element.innerHTML);
+                              element.setAttribute('title','Most important attribute');
+                              element.style.backgroundColor= 'lightgray';
+                              element.style.margin = '5px';
+                              element.style.padding = '5px';
+                              element.style.color = 'tomato';
+                              element.innerHTML = "Lekhok-" + (i+1);
+                              
+                    }
+          </script>
+</body>
+</html>
